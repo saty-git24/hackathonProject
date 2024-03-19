@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="page_3.css"> -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_3.css') }}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="background_image blur"></div>
+    
+    <div class="full_page">
+        <div class="layer2 blur">
+            <div class="box1">
+                <div class="chatbox1">
+                    <img src="{{ url_for('static', filename='chat box.png') }}" alt="" class="box_img">
+                </div>
+                <div class="text1">
+                    You seem to be in {{data}} mood
+                </div>
+            </div>
+            <div class="human">
+                <img src="{{ url_for('static', filename='Human.png') }}" alt="human" class="human_img">
+            </div>
+        </div>
+        
+        
+        <div class="layer3 blur">
+            <div class="review_text">
+                Are you satisfied with the prediction ?
+            </div>
+            <div class="review">
+                <form action="/feedback" method="post" id="myform" >
+                    
+                    <input type="radio" name="feedback" class="yes_radio" value="Yes" id="Yes">
+                    <label class="yes review_button" for="Yes">Yes</label>
+                    
+                    <input type="radio" name="feedback" class="no_radio" value="No" id="No">
+                    <label for="No" class="no review_button">No</label>
+                    
+                    <div class="submit_btn">
+                        <input type="submit" value="Submit" class="form_submit" onclick="openPopup()">
+                    </div>
+                 </form>
+            </div>
+        </div>
+    </div>
+    <script>
+        let popup = document.querySelector(".layer4");
+        let blur = document.querySelector(".blur");
+        let layer3 = document.querySelector(".layer3")
+        let human = document.querySelector(".human")
+        function openPopup() {
+            popup.classList.add("openPopup");
+            blur.classList.add("blur_bg")
+            layer3.classList.add("blur_bg")
+            human.classList.add("blur_bg")
+        }
+    </script>
+</body>
+
+</html>

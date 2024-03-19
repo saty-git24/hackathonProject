@@ -1,0 +1,173 @@
+*{
+    font-family: "Roboto Mono", monospace;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.background_image {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.logo{
+    position: absolute;
+    top: 25px;
+    left: 0;
+    color: white;
+}
+.logo_img{
+    height: 90px;
+}
+
+.logo_span{
+    position: absolute;
+    top: 35px;
+    left: 135px;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.nav_options{
+    position: absolute;
+    top: 35px;
+    left: 1450px;
+    color: white;
+}
+.nav_options ul{
+    display: flex;
+    gap: 80px;
+}
+.nav_options ul li a{
+    text-decoration: none;
+    color: white;
+}
+.nav_options ul li :hover {
+    background-color: #42001C;
+    border-radius: 20px;
+    padding: 10px;
+    margin: -10px;
+    box-sizing: border-box;
+}
+.nav_options ul li{
+    list-style: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+.arrow{
+    height: 21px;
+}
+.nav_options span{
+    padding-right: 5px;
+    font-weight: bold;
+}
+.box_img{
+    height: 130px;
+    position: absolute;
+    left: 40px;
+}
+.text1{
+    position: absolute;
+    left: 80px;
+    top: 49px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bolder;
+}
+.layer2{
+    display: flex;
+    position:absolute;
+    top:320px;
+    left:800px;
+    justify-content: center;
+    transform: scale(1.5);
+}
+.box_img_2{
+    height: 520px;
+    position: absolute;
+    top: 10px;
+    left: 55px;
+}
+.text2{
+    position: absolute;
+    left: 380px;
+    top: 145px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bolder;
+}
+.human_img{
+    margin-top: 30px;
+    margin-left: 60px;
+    height: 400px;
+}
+.button{
+    position: absolute;
+    height: 65px;
+    width: 220px;
+    background-color: rgba(255, 255, 255, 0.482);
+    border-radius: 20px;
+}
+.layer3 .text{
+    position: absolute;
+    left: 50px;
+    top: 6px;
+    font-size: 45px;
+    font-family: "Merriweather", serif;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: black;
+}
+.rhombus{
+    position: absolute;
+    width: 15px;
+    height: 15px;    
+    transform: rotate(67.5deg) skewX(45deg) scaleY(cos(45deg));
+    background-color: black;
+    top: 25px;
+    left: 15px;
+}
+.rhombus2{
+    left: 190px;
+}
+.layer3{
+    position: absolute;
+    top: 900px;
+    left: 920px;
+    text-align: center;
+    justify-content: center;
+    transform: scale(1.5);
+}
+.layer3 a{
+    text-decoration: none;
+    color: black;
+}
+.layer3 .button :hover{
+    box-shadow: 10px 10px 5px white;
+}
+body{
+    animation: transitionIn 0.75s;
+    overflow: hidden;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}

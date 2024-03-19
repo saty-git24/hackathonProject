@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+        rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+   <!-- <link rel="stylesheet" href="page_1.css">-->
+   
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_1.css') }}">
+ 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="background_image"></div>   
+        <nav>
+            <div class="logo">
+                <!--<img src="logo.png" alt="logo" class="logo_img"> -->
+                <img src="{{ url_for('static', filename='logo.png') }}" class="logo_img" alt="logo_png">
+            </div>
+            <span class="logo_span">SENTI</span>
+            <span class="nav_options">
+                <ul>
+                    <li><span><a href="/about">About</a></span></li>
+                    <li><span><a href="/how_to_play">How to play</a></span></li> 
+                    <li><span><a href="/contact_us">Contact Us</a></span></li>
+                </ul>
+            </span>
+        </nav>
+        
+        <div class="layer2">
+            <div class="box1">
+                <div class="chatbox1">
+                    <img class="box_img" src="{{ url_for('static', filename='chat box.png') }}" alt="Example Image">
+                </div>
+                <div class="text1" >
+                    Hi, I am Senti!
+                </div>
+            </div>
+            <div class="human">
+                <!--<img src="Human.png" alt="human" class="human_img">-->
+                <img class="human_img" src="{{ url_for('static', filename='Human.png') }}" alt="Example Image">
+            </div>
+            <div class="box2">
+                <div class="chatbox2">
+                    <!-- <img src="chat_box_2.png" alt="chat" class="box_img_2">-->
+                    <img class="box_img_2" src="{{ url_for('static', filename='chat_box_2.png') }}" alt="Example Image">
+                </div>
+                <div class="text2">
+                    I can guess your mood from your texts.Wanna try ?
+                </div>
+            </div>
+        </div>
+        
+        <!--<a href="page_2.html">-->
+            
+            <a href="/page_2">
+                <div class="layer3">
+                    <div class="button"></div>
+                    <div class="text">PLAY</div>
+                    <div class="rhombus rhombus1"></div>
+                    <div class="rhombus rhombus2"></div>
+                </div>
+            </a>
+        
+        </body>
+        
+        </html>

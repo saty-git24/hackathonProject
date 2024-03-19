@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <!-- <link rel="stylesheet" href="page_2.css"> -->
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='page_2.css') }}">
+</head>
+<body>
+    <div class="background_image"></div>
+    <div class="text">
+        <div class="text_bg">
+            <!-- <img src="text_box.png" alt="text_bg" class="text_bg_img"> -->
+            
+        </div>
+        <div class="textbox">
+            <form action="/submit" method="post" name="prompt">
+             <textarea name="Person_address" id="address" rows="13" cols="37" placeholder="Enter text here"></textarea>
+            </form>
+        </div>
+    </div>
+    <div class="start">
+       <a href="/page_3"><button class="start_button">START</button></a>
+    </div>
+    <!--<a href="{{ url_for('page_1') }}">Home Page</a>-->
+</body>
+</html>

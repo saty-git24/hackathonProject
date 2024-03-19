@@ -1,0 +1,209 @@
+*{
+    font-family: "Roboto Mono", monospace;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+.full_page{
+  transform: scale(1.4);
+  position: absolute;
+  top: 100px;
+  left: 0px;
+}
+.background_image {
+    background-image: url('bg.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.box_img{
+    height: 160px;
+    position: absolute;
+    left: 10px;
+}
+.text1{
+    position: absolute;
+    left: 84px;
+    top: 39px;
+    font-family: "IBM Plex Mono", monospace;
+    font-weight: bolder;
+    width: 140px;
+}
+.layer2{
+    display: flex;
+    position: absolute;
+    top:40px;
+    left: 500px;
+    justify-content: center;
+}
+.human_img{
+    margin-top: 30px;
+    margin-left: 60px;
+    height: 400px;
+}
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.go_home{
+  display: flex;
+  flex-direction: row;
+}
+.home_btn{
+  margin-top: 7px;
+  padding: 2px;
+  border-radius: 6px;
+  font-size: 15px;
+  border: none;
+}
+.home_img{
+  height: 30px;
+  margin-right: 20px;
+}
+.layer4 {
+  position: absolute;
+  left: 550px;
+  height: 250px;
+  width: 450px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to left , #42001C, #001B1B);
+  border-radius: 30px;
+  transition: transform 0.4s, top 0.4s;
+}
+.extra{
+  transform: scale(0.1);
+  top: 0px;
+  visibility: hidden;
+}
+.openPopup{
+  transform: scale(1);
+  top: 100px;
+  visibility: visible;
+}
+.blur_bg{
+  filter: blur(20px);
+}
+/* .rating-box {
+  display: flex;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  align-items: center;
+  background: #fff;
+  border-radius: 25px;
+  height: 250px;
+  width: 450px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+  margin-top: 10px;
+} */
+.submit_btn{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 10px;
+  left: 100px;
+  transform: scale(1.5);
+}
+.form_submit{
+  margin-left: 165px;
+  height: 30px;
+  width: 60px;
+  background: linear-gradient(to left , #42001C, #001B1B);
+  color: white;
+  font-weight: bold;
+  border-radius: 20px;
+  cursor: pointer;
+  border: 2px solid white;
+}
+.rating-box label{
+  font-size: 15px;
+  font-family: "Roboto Mono", monospace;
+  color:#42001C;
+}
+.mood_options{
+  margin-bottom: 10px;
+}
+.layer4 header {
+  position: absolute;
+  margin: 10px;
+  top: 0px;
+  font-size: 22px;
+  color: white;
+}
+.layer3{
+  position: absolute;
+  top: 470px;
+  left: 450px;
+  background: linear-gradient(to left , #42001C, #001B1B);
+  border: 2px solid white;
+  height: 170px;
+  width: 660px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  border-radius: 100px;
+  margin:10px;
+  transform: scale(0.8);
+}
+.layer3 .review_text{
+  font-family: "Roboto Mono", monospace;
+  font-size: 25px;
+  margin-bottom: 15px;
+  margin-top: 25px;
+  color:#ffffff;
+}
+
+.yes{
+  margin-right: 150px;
+  cursor: pointer;
+}
+.review_button{
+  height: 30px;
+  width: 80px;
+  /* background: linear-gradient(to left , #42001C, #001B1B); */
+  /* background-color: white; */
+  border: none;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border-radius: 205px;
+  cursor: pointer;
+  font-size: 25px;
+}
+.thanks_text p{
+  color: white;
+}
+.thanks_text{
+  padding: 10px;
+  text-align: justify;
+}
+body{
+  animation: transitionIn 0.75s;
+  /* overflow: hidden; */
+}
+@keyframes transitionIn {
+  from {
+      opacity: 0;
+      transform: translateY(-10px);
+  }
+
+  to{
+      opacity: 1;
+      transform: translateY(0px);
+  }
+}
